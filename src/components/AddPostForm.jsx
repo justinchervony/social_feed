@@ -22,8 +22,9 @@ const AddPostForm = (props) => {
             </div>
             <div className="form-group">
                 <label>Post</label>
-                <input type='text' className='form-control' value={post} onChange={(event) => setPost(event.target.value)} />
+                <textarea className='form-control' value={post} onChange={(event) => setPost(event.target.value)} />
             </div>
+
             <button type='submit' className="btn btn-primary">Create</button>
         </form>
     );

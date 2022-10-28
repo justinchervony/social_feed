@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AddPostForm from "./components/AddPostForm";
+import DisplayPosts from "./components/DisplayPosts";
 import './App.css'
 
 
@@ -7,7 +8,7 @@ function App() {
   const [posts, setPosts] = useState([])
 
   function addNewPost(post){
-    let tempPosts = [...posts, post];
+    let tempPosts = [post, ...posts, ];
 
     setPosts(tempPosts);
   }
@@ -25,7 +26,9 @@ function App() {
           </div>
         </div>
         <div className="feed">
-          UserPosts
+          <div className="border-box">
+              <DisplayPosts parentPosts={posts} />
+          </div>
         </div>
       </div>
     </div>
