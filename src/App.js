@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AddPostForm from "./components/AddPostForm";
 import './App.css'
 
 
@@ -21,9 +22,6 @@ function App() {
         <div className="container-fluid">
           <div className="border-box">
             <AddPostForm addNewPostProperty={addNewPost} />
-          </div>
-          <div className="createButton">
-            Create
           </div>
         </div>
         <div className="feed">
