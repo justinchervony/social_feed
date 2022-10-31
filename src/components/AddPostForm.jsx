@@ -17,15 +17,15 @@ const AddPostForm = (props) => {
     return (
         <form onSubmit={handleCreate} className='form-grid'>
             <div className="form-group">
-                <label>Name</label>
+                <h4 className="label">Name</h4>
                 <input type='text' className='form-control' value={name} onChange={(event) => setName(event.target.value)} />
             </div>
             <div className="form-group">
-                <label>Post</label>
+                <h4 className="label">Post</h4>
                 <textarea className='form-control' value={post} onChange={(event) => setPost(event.target.value)} />
             </div>
 
-            <button type='submit' className="btn btn-primary">Create</button>
+            <button type='submit' className="submitButton">Create</button>
         </form>
     );
 }

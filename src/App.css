@@ -1,11 +1,45 @@
 body {
-    background-color: antiquewhite;
+    background-color: rgb(224, 224, 224);
+    
 }
 
-/* .headBanner{
-    background-color: white;
-}
-
-.container-fluid{
-    background-color: white;
+/* .page{
+    display: grid;
+    place-content: center;
 } */
+
+.headBanner{
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-bottom: 1rem;
+    box-shadow: 10px 10px 10px rgb(202, 202, 202);
+    
+}
+
+.bodyClass{
+    background-color: white;
+    
+    display: grid;
+    place-content: center;
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 10px 10px 10px rgb(202, 202, 202);
+    border-radius: 5px;
+}
+
+.label {
+    color: grey;
+}
+
+.feedBox{
+    background-color: white;
+}
+
+
+.text-muted{
+    color: gray;
+}

@@ -15,20 +15,18 @@ function App() {
 
 
   return (
-    <div>
+    <div className="page">
       <div className="headBanner">
         <h3>Social<span className='text-muted'>Feed</span></h3>
       </div>
-      <div className="bodyBackground">
-        <div className="container-fluid">
-          <div className="border-box">
-            <AddPostForm addNewPostProperty={addNewPost} />
-          </div>
+      <div className="bodyClass">
+        <div className="postBox">
+          <AddPostForm addNewPostProperty={addNewPost} />
         </div>
-        <div className="feed">
-          <div className="border-box">
-              <DisplayPosts parentPosts={posts} />
-          </div>
+      </div>
+      <div className="bodyClass">
+        <div>
+          <DisplayPosts parentPosts={posts} />
         </div>
       </div>
     </div>
