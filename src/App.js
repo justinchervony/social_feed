@@ -13,20 +13,21 @@ function App() {
     setPosts(tempPosts);
   }
 
-
   return (
     <div className="page">
       <div className="headBanner">
         <h3>Social<span className='text-muted'>Feed</span></h3>
       </div>
-      <div className="bodyClass">
+      <div>
+        <div className="bodyClass">
         <div className="postBox">
           <AddPostForm addNewPostProperty={addNewPost} />
         </div>
       </div>
-      <div className="bodyClass">
-        <div>
-          <DisplayPosts parentPosts={posts} />
+        <div className="bodyClass">
+          <div>
+            <DisplayPosts parentPosts={posts} />
+          </div>
         </div>
       </div>
     </div>

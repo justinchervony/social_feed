@@ -27,7 +27,7 @@ const CustomButton = (props) => {
         }
         
     }
-
+   
     return (  
         <div>
             <button className={buttonClass1} onClick={() => handleClick(buttonClass1, "Like")}>{props.message1}</button>
@@ -37,3 +37,6 @@ const CustomButton = (props) => {
 }
  
 export default CustomButton;
+
+
+
