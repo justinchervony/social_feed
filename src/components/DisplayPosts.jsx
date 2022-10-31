@@ -1,3 +1,5 @@
+import CustomButton from "./CustomButton/CustomButton";
+
 function DisplayPosts(props) {
     return (
         <body>
@@ -6,8 +8,7 @@ function DisplayPosts(props) {
                     <div className="feedBox">
                         <h4>{post.name}</h4>
                         <h6>{post.post}</h6>
-                        <button>Like</button>
-                        <button>Dislike</button>
+                        <CustomButton message1="Like" message2="Dislike" />
                         <hr />
                     </div>
                 );
